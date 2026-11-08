@@ -1,0 +1,148 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Halcyon's DSH plugins",
+    "zh": "Halcyon 的 DSH 插件源"
+  },
+  "description": {
+    "en": "My own DSH plugins: MCP server management in the left sidebar, and Magpie quota in the session top bar.",
+    "zh": "我自己的 DSH 插件：左侧栏 MCP 服务器管理，以及会话顶栏的 Magpie 额度显示。"
+  },
+  "metadata": {
+    "categories": {
+      "integration": {
+        "title": {
+          "en": "Integration",
+          "zh": "集成"
+        }
+      },
+      "usage": {
+        "title": {
+          "en": "Usage",
+          "zh": "用量"
+        }
+      }
+    },
+    "labels": {
+      "sidebar": {
+        "title": {
+          "en": "Sidebar",
+          "zh": "左侧栏"
+        }
+      },
+      "agent-tools": {
+        "title": {
+          "en": "Agent tools",
+          "zh": "Agent 工具"
+        }
+      },
+      "credential-store": {
+        "title": {
+          "en": "Credential store",
+          "zh": "凭据库"
+        }
+      }
+    },
+    "sortKeys": {
+      "order": {
+        "title": {
+          "en": "Order",
+          "zh": "排序"
+        },
+        "order": "asc"
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-mcp-manager",
+      "title": {
+        "en": "MCP servers",
+        "zh": "MCP 服务器"
+      },
+      "description": {
+        "en": "Add, test, enable and remove MCP servers from a panel in the DSH left sidebar, with secrets kept in the credential store.",
+        "zh": "在 DSH 左侧栏的面板中添加、测试、启停和删除 MCP 服务器，密钥保存于凭据库。"
+      },
+      "icon": "https://raw.githubusercontent.com/HalcyonAzure/dsh-mcp-manager/1dd72490e0a7edf92237434c628f983e184ac8fe/icon.svg",
+      "author": "HalcyonAzure",
+      "homepage": "https://github.com/HalcyonAzure/dsh-mcp-manager",
+      "repository": {
+        "url": "https://github.com/HalcyonAzure/dsh-mcp-manager"
+      },
+      "metadata": {
+        "category": "integration",
+        "keywords": [
+          "mcp",
+          "model context protocol",
+          "servers",
+          "sidebar",
+          "stdio",
+          "streamable http"
+        ],
+        "labels": [
+          "sidebar",
+          "agent-tools",
+          "credential-store"
+        ],
+        "sortKeys": {
+          "order": 10
+        }
+      },
+      "versions": [
+        {
+          "version": "1.1.0",
+          "publishTimestamp": 1794121547,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/HalcyonAzure/dsh-mcp-manager",
+            "commit": "1dd72490e0a7edf92237434c628f983e184ac8fe"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-magpie-quota",
+      "title": {
+        "en": "Magpie quota",
+        "zh": "Magpie 额度"
+      },
+      "description": {
+        "en": "Show the remaining Magpie quota for the current model in the session top bar; click for every account.",
+        "zh": "在会话顶栏显示当前模型对应 Magpie 账号的剩余额度，点击可查看全部账号。"
+      },
+      "icon": "https://raw.githubusercontent.com/HalcyonAzure/dsh-magpie-quota/9266b38dceb192cf37b6ffdc4707377a12f0517f/icon.svg",
+      "author": "HalcyonAzure",
+      "homepage": "https://github.com/HalcyonAzure/dsh-magpie-quota",
+      "repository": {
+        "url": "https://github.com/HalcyonAzure/dsh-magpie-quota"
+      },
+      "metadata": {
+        "category": "usage",
+        "keywords": [
+          "magpie",
+          "quota",
+          "balance",
+          "usage"
+        ],
+        "labels": [
+          "credential-store"
+        ],
+        "sortKeys": {
+          "order": 20
+        }
+      },
+      "versions": [
+        {
+          "version": "1.1.2",
+          "publishTimestamp": 1794118471,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/HalcyonAzure/dsh-magpie-quota",
+            "commit": "9266b38dceb192cf37b6ffdc4707377a12f0517f"
+          }
+        }
+      ]
+    }
+  ]
+}
